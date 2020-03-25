@@ -6,8 +6,7 @@ function setDefaultState() {
   baseState[id] = {
     status: "new",
     id: id,
-    title: "This site uses 🍪 to keep track of your tasks"
-
+    title: "This site uses 🍪to keep track of your tasks"
   };
   syncState(baseState);
 }
@@ -82,7 +81,7 @@ function addItem(text, status, id, noUpdate) {
 
   $(".form-control")
     .val("")
-    .attr("placeholder", "✍️ take-suru(する) //@meanii");
+    .attr("placeholder", "✍️ Add item...");
   setTimeout(function() {
     $(".todo-list li").removeClass("animated flipInX");
   }, 500);
@@ -149,7 +148,7 @@ $(function() {
       .parent();
 
     if ($(".todo-list li").length == 1) {
-      box.removeClass("animated flipInX").addClass("animated bounceOutLeft");
+      box.removeClass("animated flipInX").addClass("animated                bounceOutLeft");
       setTimeout(function() {
         box.remove();
         $(".no-items").removeClass("hidden");
